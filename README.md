@@ -33,6 +33,22 @@ HashSet内部就是使用Hashmap实现的，和Hashmap不同的是它不需要Ke
    （2）、hashtable是线程安全的，hashmap是非线程安全的
    （3）、hashtable中不允许有空值。hashmap可以将null作为key，而且只有一个。
 spring相关
+ 1。什么是IOC
+   控制反转，是将原本在程序中手动创建的对象的控制权，交给spring管理。包括构造器注入、注解注入和setter注入。
+ 2、spring框架中五种bean的作用域：
+  singleton : bean在每个Spring ioc 容器中只有一个实例。
+  prototype：一个bean的定义可以有多个实例。
+  request：每次http请求都会创建一个bean，该作用域仅在基于web的Spring ApplicationContext情形下有效。     
+  session：在一个HTTP Session中，一个bean定义对应一个实例。该作用域仅在基于web的Spring ApplicationContext情形下有效。
+  global-session：在一个全局的HTTP Session中，一个bean定义对应一个实例。该作用域仅在基于web的Spring ApplicationContext情形下有效。
+ 3、AOP：面向切面，是一种编程思想，OOP的延续。将系统中非核心的业务提取出来，进行单独处理。比如事务、日志和安全等。
+    AOP是面向切面编程，是通过动态代理的方式为程序添加统一功能，集中解决一些公共问题
+ 
 hibernate相关
+ 1.什么是延迟加载
+   延迟加载是真正用到数据的时候才会加载数据，避免一些无谓的性能开销。
 springmvc
+ 1、springmvc和struts2的区别
+  springmvc的入口是一个DispatcherServlet即前端控制器，strut2的入口是一个filter。
+  
 数据库
