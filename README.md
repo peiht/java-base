@@ -60,6 +60,11 @@ spring相关
   global-session：在一个全局的HTTP Session中，一个bean定义对应一个实例。该作用域仅在基于web的Spring ApplicationContext情形下有效。
  3、AOP：面向切面，是一种编程思想，OOP的延续。将系统中非核心的业务提取出来，进行单独处理。比如事务、日志和安全等。
     AOP是面向切面编程，是通过动态代理的方式为程序添加统一功能，集中解决一些公共问题
+ 4、spring的bean的生命周期
+   （1）、bean定义，在配置文件中用<bean></bean>去定义
+   （2）、bean初始化，有两种方式，一种是通过init-method实现，还有是通过实现org.springframwork.beans.factory.InitializingBean接口
+   （3）、bean调用 有三种方式调用bean实例
+   （4）、bean销毁 两种方式，destroy-method实现，还有实现org.springframwork.beans.factory.DisposeableBean接口
  
 hibernate相关
  1.什么是延迟加载
