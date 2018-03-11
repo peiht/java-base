@@ -1,4 +1,4 @@
-package learning.thread;
+package collection;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
