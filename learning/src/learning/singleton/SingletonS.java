@@ -1,5 +1,10 @@
 package learning.singleton;
 
+/**
+ * 懒汉模式   线程安全
+ * @author Administrator
+ *
+ */
 public class SingletonS {
 
 	private static SingletonS instance = null;

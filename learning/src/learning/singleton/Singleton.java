@@ -1,5 +1,10 @@
 package learning.singleton;
 
+/**
+ * ¶öººÄ£Ê½
+ * @author Administrator
+ *
+ */
 public class Singleton {
 	private static Singleton instance = new Singleton();
 	
