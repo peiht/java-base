@@ -4,7 +4,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class MyThread extends Thread{
 	private LockTest test;
-	MyThread(LockTest test){
+	public MyThread(LockTest test){
 		this.test = test;
 	}
 	public void run(){
