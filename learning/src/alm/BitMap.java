@@ -1,6 +1,5 @@
 package alm;
 
-import java.util.BitSet;
 
 /**
  * 用位图实现大数据量的计算
