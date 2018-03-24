@@ -35,6 +35,7 @@ public class JDKProxy implements InvocationHandler {
 
     public static void main(String args[]) {
         JDKProxy jdk  = new JDKProxy();
+        //user引用的是proxy，而proxy是相当于去调用impl的方法。
         UserManager user = (UserManager) jdk.newProxy(new UserManagerImpl());
         user.addUser("1", "123456");
     }

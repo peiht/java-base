@@ -15,14 +15,14 @@ public class Link {
 	 */
 	class Node{
 		Node next = null;//节点的引用，指向下一个节点
-		int data;//节点的内容
+		Object data;//节点的内容
 		
-		public Node(int data){
+		public Node(Object data){
 			this.data = data;
 		}
 	}
 	
-	public void add(int d){
+	public void add(Object d){
 		Node newNode = new Node(d);
 		if(head ==null){
 			head = newNode;
@@ -35,12 +35,26 @@ public class Link {
 		tmp.next = newNode;
 	}
 	
-	public void del(int index)
+	public void del(int index) throws Exception
 	{
 		if(index < 1 || index > length())
 		{
-			
+			throw new Exception("false");
+		}else {
+		    
 		}
+	}
+	
+	public Object find(Object obj) throws Exception {
+	    if(head == null)
+	        throw new Exception("the linkList is null");
+	    Node cur = head;
+	    while(cur != null) {
+	        if(cur.data.equals(obj)) {
+	            
+	        }
+	    }
+	    return null;
 	}
 	
 	public int length(){

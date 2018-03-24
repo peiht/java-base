@@ -108,3 +108,10 @@ transient关键字的使用:
 
 注解的原理：
 注解本质是一个继承了Annotation的特殊接口，其具体实现类是Java运行时生成的动态代理类。而我们通过反射获取注解时，返回的是Java运行时生成的动态代理对象$Proxy1。通过代理对象调用自定义注解（接口）的方法，会最终调用AnnotationInvocationHandler的invoke方法。该方法会从memberValues这个Map中索引出对应的值。而memberValues的来源是Java常量池
+
+
+java web
+response和request的区别：
+	request是客户端向服务器端发送的请求。主要包括了自己浏览器的信息，http变量，保存在cookie中的信息
+	response是服务器对客户端的相应。主要包括了页面的信息，和cookie。
+	cookie就是保存在客户端上的一些信息，可以用来验证用户信息，提高用户的相应速度。
