@@ -16,4 +16,10 @@ public class SingletonInner {
 	public static final SingletonInner getInstance(){
 		return LazyHolder.instance;
 	}
+	
+	public static void main(String[] args){
+		SingletonInner in = new SingletonInner().getInstance();
+		SingletonInner in1 = new SingletonInner().getInstance();
+		System.out.println(in == in1);
+	}
 }
