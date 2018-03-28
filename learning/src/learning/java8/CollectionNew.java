@@ -6,8 +6,8 @@ import java.util.List;
 /**
  * Iterable接口中添加了forEach方法，方法的参数是Consumer，是一个lamada表达式
  * lamada表达式的用法
- * (param) -> expression
- * (param) -> statement
+ * (param) -> expression 表达式
+ * (param) -> statement  语句
  * (parma) -> {statement}
  * @author Administrator
  *
