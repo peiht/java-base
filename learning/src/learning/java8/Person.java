@@ -7,9 +7,12 @@ package learning.java8;
  * @author Administrator
  *
  */
+@FunctionalInterface
 public interface Person {
 
 	default String getName(String name){
 		return name;
 	}
+	
+	String getID();
 }

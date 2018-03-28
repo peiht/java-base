@@ -16,7 +16,9 @@ public class CollectionNew {
 
 	public static void main(String[] agrs){
 		List features = Arrays.asList("Lamada","Default Method","data and time","Stream");
-		//features.forEach(n -> System.out.println(n));
-		features.forEach(System.out::println);
+		String separator = ",";
+		//features.forEach(n -> System.out.println(n+separator));
+		
+		//features.forEach(System.out::println);
 	}
 }
