@@ -58,6 +58,16 @@ public class LintCode {
 		}
 		return false;
 	}
+	
+	/**
+	 * 求两个排序数组的新数组
+	 * @param A
+	 * @param B
+	 * @return
+	 */
+	public static int[] mergeSortedArray(int[] A,int[] B){
+		return null;
+	}
 	public static void main(String[] args) {
 		int a = nthUglyNumber(1665);
 		System.out.println(a);
