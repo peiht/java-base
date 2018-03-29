@@ -69,6 +69,7 @@ public class BlockQueue<T> {
 				popLock.notify();
 			}
 		}
+		
 	public static void main(String[] args) {
 		BlockQueue<String> queue = new BlockQueue<String>();
 		queue.push("1");
