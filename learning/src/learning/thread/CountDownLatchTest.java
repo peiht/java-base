@@ -11,6 +11,7 @@ import java.util.concurrent.CountDownLatch;
 public class CountDownLatchTest {
 
     public static void main(String[] args) {
+        
         //设置两个线程
        final CountDownLatch latch = new CountDownLatch(2);
        

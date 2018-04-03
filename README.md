@@ -36,8 +36,14 @@ java堆内存分为三个主要区域：新生代、老年代和永久代;新生
  lock可以让等待的线程中断响应，synchronized却不能。     
  lock可以知道有没有成功获取到锁。     
  lock可以提高多个线程的操作效率。  
- （2）、synchronized的使用方法和原理      synchronized可以修饰普通的方法，修饰静态方法和代码块      实现原理：每个对象都有一个监视器，当monitor被占用时就会处于锁定状态。线程执行开始时，如果monitor获取到的值为0，则进入到该monitor，即该线程为monitor的所有者，如果检测到其他线程占用monitor则会阻塞，等待monitor的进入数为0，再尝试获取monitor的所有权。 
- 
+ （2）、synchronized的使用方法和原理      
+ synchronized可以修饰普通的方法，修饰静态方法和代码块      实现原理：每个对象都有一个监视器，当monitor被占用时就会处于锁定状态。线程执行开始时，如果monitor获取到的值为0，则进入到该monitor，即该线程为monitor的所有者，如果检测到其他线程占用monitor则会阻塞，等待monitor的进入数为0，再尝试获取monitor的所有权。 
+ (3)volatile 和 synchronized的区别
+  1）volatile本质是在告诉jvm当前变量在寄存器中的值是不确定的,需要从主存中读取,synchronized则是锁定当前变量,只有当前线程可以访问该变量,其他线程被阻塞住.
+  2）volatile仅能使用在变量级别,synchronized则可以使用在变量,方法.
+  3）volatile仅能实现变量的修改可见性,而synchronized则可以保证变量的修改可见性和原子性.
+  4）volatile不会造成线程的阻塞,而synchronized可能会造成线程的阻塞.
+
  6.java垃圾回收
  垃圾回收器的种类：
 	serial收集器，单线程。新生代采用复制算法，暂停用户的所有线程。
