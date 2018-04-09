@@ -21,4 +21,10 @@ public class DoubleCheckLocking {
 		}
 		return instance;
 	}
+	
+	public static void main(String[] agrs) {
+	    DoubleCheckLocking instance = getInstance();
+	    DoubleCheckLocking instance2 = getInstance();
+	    System.out.println(instance == instance2);
+	}
 }

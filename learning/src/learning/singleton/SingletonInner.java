@@ -8,7 +8,7 @@ package learning.singleton;
 public class SingletonInner {
 
 	private static class LazyHolder{
-		private static final SingletonInner instance = null;
+		private static final SingletonInner instance = new SingletonInner();
 	}
 	
 	private SingletonInner(){}
@@ -18,8 +18,8 @@ public class SingletonInner {
 	}
 	
 	public static void main(String[] args){
-		SingletonInner in = new SingletonInner().getInstance();
-		SingletonInner in1 = new SingletonInner().getInstance();
+		SingletonInner in = getInstance();
+		SingletonInner in1 =getInstance();
 		System.out.println(in == in1);
 	}
 }
