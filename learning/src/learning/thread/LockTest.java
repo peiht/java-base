@@ -12,7 +12,7 @@ class MyThread extends Thread{
 	}
 }
 /**
- * lock执行的是乐观锁。synchronized执行的是悲观锁，他将锁完全托给jvm。
+ * synchronized执行的是悲观锁，他将锁完全托给jvm。
  * @author Administrator
  *
  */
