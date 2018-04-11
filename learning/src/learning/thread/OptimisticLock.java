@@ -24,7 +24,7 @@ public class OptimisticLock {
     public static void invoke(int a_value,String i) throws InterruptedException {
         Thread.sleep(1000);
         if(a_value != value) {
-            System.out.println(a_value+":"+value+"值不一样，不继续执行");
+            System.out.println(a_value+":"+value+" 值不一样，不继续执行");
             value --;
         }else {
             a_value++;
@@ -46,7 +46,7 @@ public class OptimisticLock {
     public static void invoke2(int b_value,String i) throws InterruptedException {
         Thread.sleep(1000);
         if(b_value != value) {
-            System.out.println(b_value+":"+value+"b版本不一致，不继续");
+            System.out.println(b_value+":"+value+" b版本不一致，不继续");
         }else {
             System.out.println("B:利用value运算,value="+b_value);
         }

@@ -43,8 +43,6 @@ public class SemaphoreTest {
         for(int i=0;i<N;i++) {
             new Workers(i,semaphore).start();
         }
-        
-      
     }
 
 }
