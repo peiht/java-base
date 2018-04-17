@@ -23,7 +23,7 @@ public class ThreadPoolTest {
 	}
 	public static void main(String[] args) throws InterruptedException{
 		TestPool pool = new TestPool();
-		ExecutorService es = new ThreadPoolExecutor(5,5,0L,TimeUnit.SECONDS,
+		/*ExecutorService es = new ThreadPoolExecutor(5,5,0L,TimeUnit.SECONDS,
 				new ArrayBlockingQueue<Runnable>(10),Executors.defaultThreadFactory(),
 				new RejectedExecutionHandler(){
 			
@@ -33,12 +33,16 @@ public class ThreadPoolTest {
 				
 			}
 			
-		});
+		});*/
+		ExecutorService es = Executors.newFixedThreadPool(2);
 		for(int i=0;i<50;i++)
 		{
-			es.submit(pool);
-			Thread.sleep(10);
+			//es.submit(pool);
+			es.execute(pool);
+			//Thread.sleep(10);
 		}
+		es.shutdown();
+		
 	}
 
 }
