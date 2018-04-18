@@ -12,9 +12,10 @@ public class ServerHandler extends ChannelHandlerAdapter{
 	public void channelRead(ChannelHandlerContext ctx,Object msg){
 		try{
 			ByteBuf in = (ByteBuf) msg;
-			byte[] req = new byte[in.readableBytes()];
-			in.readBytes(req);
-			System.out.println("message:"+new String(req));			
+			//byte[] req = new byte[in.readableBytes()];
+			//in.readBytes(req);
+			//System.out.println("message:"+new String(req));
+			System.out.println(in.toString(CharsetUtil.UTF_8));
 		}finally{
 			ReferenceCountUtil.release(msg);
 		}
