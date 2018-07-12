@@ -5,7 +5,7 @@
 *.iml
 target
 out
-bin/
+bin/*
 log/
 *.log
 .DS_Store
