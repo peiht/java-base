@@ -10,7 +10,10 @@ public class SingletonInner {
 	private static class LazyHolder{
 		private static final SingletonInner instance = new SingletonInner();
 	}
-	
+
+	/**
+	 * 私有的构造器，防止被实例化
+	 */
 	private SingletonInner(){}
 	
 	public static final SingletonInner getInstance(){
