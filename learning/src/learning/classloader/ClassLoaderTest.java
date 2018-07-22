@@ -8,6 +8,7 @@ package learning.classloader;
  * @date 2018Äê3ÔÂ19ÈÕ
  */
 public class ClassLoaderTest {
+	public ClassLoaderTest(){}
 
 	public static void main(String[] args) {
 		ClassLoader loader = ClassLoaderTest.class.getClassLoader();
